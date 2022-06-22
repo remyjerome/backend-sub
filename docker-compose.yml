@@ -23,7 +23,7 @@ services:
 
   redis:
     image: redis
-    # command: [ "redis-server", "--bind", "redis", "--port", "6379" ]
+    command: [ "redis-server", "--bind", "redis", "--port", "6379" ]
 
 volumes:
   mongo-db: null

@@ -46,6 +46,7 @@ app.use(session({
 }))
 
 const mongoURL = `mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_IP}:${MONGO_PORT}/?authSource=admin`
+// const mongoURL = `localhost/?authSource=admin`
 
 const connectWithRetry = () => {
     mongoose
@@ -64,7 +65,6 @@ connectWithRetry()
 
 app.get('/api/v1/', (req, res) => {
     res.send(`<h1>Server ${pjson.version}</h1>`)
-    console.log('test nginx')
 })
 
 redisClient.connect()

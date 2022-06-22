@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon --legacy-watch src/index.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

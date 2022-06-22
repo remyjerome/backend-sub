@@ -12,7 +12,8 @@ exports.getAllPosts = async (req, res, next) => {
         })
     } catch (e) {
         res.status(400).json({
-            status: 'fail'
+            status: 'fail',
+            error: e
         })
     }
 }
